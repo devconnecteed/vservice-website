@@ -16,7 +16,7 @@ export function QuoteServicesSection() {
   const t = useTranslations('homepage.quoteServices')
   
   return (
-    <section className="bg-v-faded py-16 md:py-20">
+    <section className="bg-v-faded py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="text-xl md:text-2xl font-semibold text-v-dark mb-8">
           {t('title')}

@@ -21,16 +21,16 @@ export async function AssistenzaClivetSection() {
           </div>
 
           {/* Services Cards Section */}
-          <div className="mt-10 space-y-6">
+          <div className="mt-10 space-y-5">
             {/* Card 1: VRF - Full Width */}
             <div className="bg-v-dark text-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">{t('vrf.title')}</h3>
               <div className="flex flex-wrap gap-x-6 gap-y-2">
-                <ChecklistItem text={t('vrf.primoAvviamento')} isWhite={true} />
-                <ChecklistItem text={t('vrf.diagnosiSistema')} isWhite={true} />
-                <ChecklistItem text={t('vrf.manutenzioneOrdinaria')} isWhite={true} />
-                <ChecklistItem text={t('vrf.manutenzioneStaordinaria')} isWhite={true} />
-                <ChecklistItem text={t('vrf.controlloEfficienza')} isWhite={true} />
+                <ChecklistItem text={t('vrf.primoAvviamento')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('vrf.diagnosiSistema')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('vrf.manutenzioneOrdinaria')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('vrf.manutenzioneStaordinaria')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('vrf.controlloEfficienza')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
               </div>
             </div>
 
@@ -38,22 +38,22 @@ export async function AssistenzaClivetSection() {
             <div className="bg-v-dark text-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">{t('manutenzioneOrdinaria.title')}</h3>
               <div className="flex flex-wrap gap-x-6 gap-y-2">
-                <ChecklistItem text={t('manutenzioneOrdinaria.valoriTermodinamici')} isWhite={true} />
-                <ChecklistItem text={t('manutenzioneOrdinaria.assorbimentiElettrici')} isWhite={true} />
-                <ChecklistItem text={t('manutenzioneOrdinaria.resoImpianto')} isWhite={true} />
-                <ChecklistItem text={t('manutenzioneOrdinaria.perditeGas')} isWhite={true} />
+                <ChecklistItem text={t('manutenzioneOrdinaria.valoriTermodinamici')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('manutenzioneOrdinaria.assorbimentiElettrici')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('manutenzioneOrdinaria.resoImpianto')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                <ChecklistItem text={t('manutenzioneOrdinaria.perditeGas')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
               </div>
             </div>
 
             {/* Cards 3 & 4: Two cards side by side */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Card 3: Manutenzione straordinaria */}
               <div className="bg-v-dark text-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">{t('manutenzioneStaordinaria.title')}</h3>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  <ChecklistItem text={t('manutenzioneStaordinaria.ricercaGuasti')} isWhite={true} />
-                  <ChecklistItem text={t('manutenzioneStaordinaria.riparazioni')} isWhite={true} />
-                  <ChecklistItem text={t('manutenzioneStaordinaria.diagnosiComputerizzata')} isWhite={true} />
+                <div className="flex gap-x-6">
+                  <ChecklistItem text={t('manutenzioneStaordinaria.ricercaGuasti')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                  <ChecklistItem text={t('manutenzioneStaordinaria.riparazioni')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
+                  <ChecklistItem text={t('manutenzioneStaordinaria.diagnosiComputerizzata')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
                 </div>
               </div>
 
@@ -61,7 +61,7 @@ export async function AssistenzaClivetSection() {
               <div className="bg-v-dark text-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">{t('vendita.title')}</h3>
                 <div className="space-y-2">
-                  <ChecklistItem text={t('vendita.ricambiOriginali')} isWhite={true} />
+                  <ChecklistItem text={t('vendita.ricambiOriginali')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
                 </div>
               </div>
             </div>

@@ -61,7 +61,7 @@ export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
   const tArticles = useTranslations('newsArticles')
 
   return (
-    <section className="bg-v-dark py-16 md:py-20">
+    <section className="bg-v-dark py-20">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
@@ -75,7 +75,7 @@ export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
         </div>
 
         {/* Grid layout for cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {items.map((item: NewsItem) => (
             <NewsCard
               key={item.id}
@@ -84,7 +84,6 @@ export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
               href={localeHref(locale, item.href)}
               imageSrc={item.imageSrc}
               imageAlt={tArticles(`${item.id}.title`)}
-              className="bg-gray-800 rounded-xl p-6 flex-shrink-0 hover:bg-gray-750 transition-colors"
             />
           ))}
         </div>

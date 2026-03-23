@@ -48,7 +48,7 @@ export function Header() {
   }, [isImpiantiOpen]);
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -150,7 +150,7 @@ export function Header() {
                 className="flex items-center space-x-2 text-v-light hover:text-v-dark font-bold"
               >
                 <Image 
-                  src={currentLocale === 'en' ? '/Eng.svg' : '/italian-flag.svg'} 
+                  src={currentLocale === 'en' ? '/Eng.svg' : '/Italian-flag.svg'} 
                   alt={currentLocale === 'en' ? 'English flag' : 'Italian flag'} 
                   width={24} 
                   height={16}
@@ -252,7 +252,7 @@ export function Header() {
                     className="flex items-center space-x-2 text-v-light hover:text-v-dark font-bold"
                   >
                     <Image 
-                      src={currentLocale === 'en' ? '/Eng.svg' : '/italian-flag.svg'} 
+                      src={currentLocale === 'en' ? '/Eng.svg' : '/Italian-flag.svg'} 
                       alt={currentLocale === 'en' ? 'English flag' : 'Italian flag'} 
                       width={24} 
                       height={16}

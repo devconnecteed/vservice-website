@@ -13,6 +13,7 @@ export type ClipVariant =
   | 'serviziCardCut'
   | 'serviziSmallCardCut'
   | 'splitImageCutBottomRight'
+  | 'splitImageCutBottomLeft'
   | 'cosaOffriamoCardCut'
 type ClippedBoxProps =
   | {
@@ -56,6 +57,9 @@ const clipPaths: Record<ClipVariant, string> = {
 
   aziendaCutRightStraight:
     'polygon(0 0, 88% 0, 100% 100%, 0 100%)',
+  // Mirror of aziendaCutRightStraight for right-column images: full top-left, slopes right going down
+  splitImageCutBottomLeft:
+    'polygon(0 0, 100% 0, 100% 100%, 12% 100%)',
   ctaImageCutLeftStraight: 'polygon(14% 0, 100% 0, 100% 100%, 0 100%)',
   // Servizi card: cuts from top-right and bottom-left
   serviziCardCut: 'polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%)',

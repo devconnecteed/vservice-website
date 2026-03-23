@@ -17,18 +17,18 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
         subtitle={t('heroSubtitle')}
         backgroundImage="/news/news-hero-image.png"
       />
-      <section className="py-16">
+      <section className="bg-v-faded py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <article className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">{translatedTitle || t('notFound')}</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-v-dark mb-6">{translatedTitle || t('notFound')}</h1>
             <div className="prose prose-lg">
               {article ? (
                 <div>
-                  <p className="text-gray-600 mb-4">{t('datePrefix')} {article.date}</p>
-                  <div>{translatedContent}</div>
+                  <p className="text-gray-500 mb-4">{t('datePrefix')} {article.date}</p>
+                  <div className="text-gray-700">{translatedContent}</div>
                 </div>
               ) : (
-                <p>{t('notFound')}.</p>
+                <p className="text-gray-600">{t('notFound')}.</p>
               )}
             </div>
           </article>

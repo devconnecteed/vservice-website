@@ -28,7 +28,7 @@ export async function SplitSection() {
   ];
 
   return (
-    <section className="bg-v-white py-16 md:py-20">
+    <section className="bg-v-white py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-v-dark mb-10">
           {t('title')}
@@ -48,15 +48,15 @@ function SplitRow({ variant, imageSrc, imageAlt, body }: SplitItem) {
   const isImageLeft = variant === "imageLeft";
 
   const clipVariant: ClipVariant = isImageLeft
-    ? "splitImageCutRight"
-    : "splitImageCutLeft";
+    ? "aziendaCutRightStraight"
+    : "splitImageCutBottomLeft";
 
   return (
     <div className="bg-v-faded rounded-[20px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
       {/* Left column */}
       <div className={isImageLeft ? "order-1" : "order-2 lg:order-1"}>
         {isImageLeft ? (
-          <ImageBlock imageSrc={imageSrc} imageAlt={imageAlt} clip={clipVariant} />
+          <ImageBlock imageSrc={imageSrc} imageAlt={imageAlt} clip={clipVariant} roundedClass="rounded-l-[20px]" />
         ) : (
           <TextBlock body={body} />
         )}
@@ -67,7 +67,7 @@ function SplitRow({ variant, imageSrc, imageAlt, body }: SplitItem) {
         {isImageLeft ? (
           <TextBlock body={body} />
         ) : (
-          <ImageBlock imageSrc={imageSrc} imageAlt={imageAlt} clip={clipVariant} />
+          <ImageBlock imageSrc={imageSrc} imageAlt={imageAlt} clip={clipVariant} roundedClass="rounded-r-[20px]" />
         )}
       </div>
     </div>
@@ -78,15 +78,17 @@ function ImageBlock({
   imageSrc,
   imageAlt,
   clip,
+  roundedClass,
 }: {
   imageSrc: string;
   imageAlt: string;
   clip: ClipVariant;
+  roundedClass: string;
 }) {
   return (
     <ClippedBox
       variant={clip}
-      className="rounded-[20px] overflow-hidden h-[240px] md:h-[330px]"
+      className={`${roundedClass} overflow-hidden h-[240px] md:h-[330px]`}
       innerClassName="relative h-full w-full"
     >
       <Image

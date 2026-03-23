@@ -23,7 +23,7 @@ export function CertificationsSection() {
   ]
 
   return (
-    <section className="relative py-16 md:py-20 bg-white">
+    <section className="relative py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header with title and logos */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-12">

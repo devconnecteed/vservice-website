@@ -12,7 +12,7 @@ export function TwentyYearsSection() {
   return (
     <section className="relative z-20 -mt-16 md:-mt-20 lg:-mt-24 pb-16 md:pb-20 lg:pb-24">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="bg-v-dark rounded-2xl shadow-2xl p-8 md:p-10 lg:p-12 w-[1280px] h-[612px] flex flex-col justify-center mx-auto">
+        <div className="bg-v-dark rounded-2xl shadow-2xl p-8 md:p-10 lg:p-12 w-full flex flex-col justify-center">
           <p className="text-xs font-bold tracking-widest uppercase text-white/90 mb-3">
             V.SERVICE
           </p>
@@ -63,12 +63,12 @@ function MiniCard({
   href: string
 }) {
   return (
-    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg flex flex-col">
       <h3 className="text-lg font-semibold text-slate-900 mb-2">{title}</h3>
-      <p className="text-slate-600 mb-4 text-sm leading-relaxed">{text}</p>
+      <p className="text-slate-600 mb-4 text-sm leading-relaxed flex-1">{text}</p>
       <Link
         href={href}
-        className="inline-flex items-center px-5 py-2.5 bg-v-light text-white rounded-[40px] text-sm font-medium hover:bg-v-dark transition-colors"
+        className="inline-flex items-center px-5 py-2.5 bg-v-light text-white rounded-[40px] text-sm font-medium hover:bg-v-dark transition-colors self-start mt-auto"
       >
         {buttonLabel}
       </Link>

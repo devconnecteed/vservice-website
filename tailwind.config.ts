@@ -19,8 +19,8 @@ const config: Config = {
         'v-grey': '#ADADAD',        // Grey for footer and quote sections
         'v-white': '#FFFFFF',        // Clear normal white
         'v-border': '#D0D0D0',        // border greyish whitish color
-
-      },
+        'v-grayfaded': '#C9C9C9',        // Faded gray for subtle backgrounds
+     },
     },
   },
   plugins: [

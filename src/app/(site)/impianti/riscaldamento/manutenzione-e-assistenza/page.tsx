@@ -13,7 +13,7 @@ export default async function ManutenzioneAssistenzaRiscaldamentoPage() {
       <HeroPageTitle
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        backgroundImage="/hero/herobg-Manutenzione.png"
+        backgroundImage="/hero/herobg-manutenzione.png"
       />
       <TextLeftImageRightSection
         title={t('section1.title')}

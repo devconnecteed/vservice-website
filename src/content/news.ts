@@ -36,5 +36,14 @@ export const newsArticles: NewsArticle[] = [
     content: 'Il 2024 porta importanti novità per quanto riguarda i bonus fiscali...',
     date: '2024-01-05',
     category: 'Fiscalità'
+  },
+  {
+    id: '4',
+    title: 'Sistemi VRF: la soluzione per grandi ambienti',
+    slug: 'sistemi-vrf-soluzione-grandi-ambienti',
+    excerpt: 'I sistemi VRF garantiscono climatizzazione precisa e flessibile per uffici e spazi commerciali.',
+    content: 'I sistemi VRF (Variable Refrigerant Flow) rappresentano la tecnologia più avanzata per la climatizzazione di grandi edifici...',
+    date: '2023-12-20',
+    category: 'Tecnologia'
   }
 ]

@@ -93,7 +93,7 @@ export async function Footer() {
             <p>{t('copyright')}</p>
             <div className="flex items-center space-x-4 mt-4 sm:mt-0">
               <div className="flex items-center space-x-1">
-                <Image src="/italian-flag.svg" alt="Italian" width={20} height={14} />
+                <Image src="/Italian-flag.svg" alt="Italian" width={20} height={14} />
                 <span>IT</span>
               </div>
               <div className="flex items-center space-x-1">

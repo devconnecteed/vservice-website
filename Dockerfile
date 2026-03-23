@@ -13,6 +13,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Activate standalone output for Docker builds
+ENV DOCKER_BUILD=true
 # Build-time public env vars go here (no secrets)
 # ENV NEXT_PUBLIC_SITE_URL=https://www.vservice.it
 

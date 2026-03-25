@@ -28,3 +28,4 @@ export function ChecklistItem({ text, isWhite = false, iconSrc }: ChecklistItemP
     </div>
   );
 }
+//color of the checked text is v-grayfaded, the unchecked text is gray-600

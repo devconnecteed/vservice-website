@@ -58,7 +58,7 @@ export async function Footer() {
             <h3 className="text-lg font-semibold text-v-dark mb-6">{t('followUsTitle')}</h3>
             <div className="flex flex-col gap-2">
               <a
-                href="https://www.instagram.com/vservice"
+                href="https://www.instagram.com/v.service_srl/"  
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-v-dark hover:text-v-sky transition-colors"
@@ -71,7 +71,7 @@ export async function Footer() {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/company/vservice"
+                href="https://www.linkedin.com/company/v-service-s-r-l/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-v-dark hover:text-v-sky transition-colors"

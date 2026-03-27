@@ -128,10 +128,10 @@ export function Header() {
               {tNav('servizi')}
             </Link>
             
-            <Link href={localeHref(currentLocale, '/blog')} className="text-v-light hover:text-v-dark font-bold">
+            {/* <Link href={localeHref(currentLocale, '/blog')} className="text-v-light hover:text-v-dark font-bold">
               {tNav('blog')}
-            </Link>
-            
+            </Link> */}
+
             <Link href={localeHref(currentLocale, '/gallery')} className="text-v-light hover:text-v-dark font-bold">
               {tNav('gallery')}
             </Link>
@@ -234,9 +234,9 @@ export function Header() {
               <Link href={localeHref(currentLocale, '/servizi')} className="text-v-light hover:text-v-dark font-bold py-2">
                 {tNav('servizi')}
               </Link>
-              <Link href={localeHref(currentLocale, '/blog')} className="text-v-light hover:text-v-dark font-bold py-2">
+              {/* <Link href={localeHref(currentLocale, '/blog')} className="text-v-light hover:text-v-dark font-bold py-2">
                 {tNav('blog')}
-              </Link>
+              </Link> */}
               <Link href={localeHref(currentLocale, '/gallery')} className="text-v-light hover:text-v-dark font-bold py-2">
                 {tNav('gallery')}
               </Link>

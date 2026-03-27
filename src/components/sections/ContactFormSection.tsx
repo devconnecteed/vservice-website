@@ -69,7 +69,7 @@ export function ContactFormSection() {
       right: {
         title: t('emailLabel'),
         iconSrc: '/icons/drafts-white.svg',
-        lines: ['info@vservice.it', 'vservicehelp@gmail.it'],
+        lines: ['info@vservice.it'],
       },
     },
     {
